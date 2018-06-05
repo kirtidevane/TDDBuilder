@@ -1,0 +1,70 @@
+<!-- <div [@routerTransition]>
+ -->
+ 
+
+ <div class="row justify-content-md-center">
+        <h1 style="z-index: 1;">Documentation Auto Generator</h1>
+        
+    <div class="col-lg-10">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" align="center" class="form-horizontal ">
+            <div class="form-content">
+                <div class="form-group" [class.has-error]="svnurl.invalid" [class.has-success]="svnurl.valid">
+                    <label class="control-label" for="exampleInputName2">SVN URL</label>
+                    <input type="text" [(ngModel)]="user1.svnurl" #svnurl="ngModel" class="form-control input-underline input-lg" ngModel id="svnurl" name="svnurl" required="" placeholder="SVN URL" >                
+                    <span class="help-block"  *ngIf="svnurl.errors?.required">SVN URL is required</span>
+                </div>
+
+                <div class="form-group"  [class.has-error]="user.invalid" [class.has-success]="user.valid">
+                    <label class="control-label" for="exampleInputName2">Username</label>
+                    <input type="text" [(ngModel)]="user1.user" #user="ngModel"  class="form-control input-underline input-lg" ngModel id="user" name="user" required="" placeholder="Username">
+                    <span class="help-block" *ngIf="user.errors?.required">Username is required</span>
+                </div>
+
+                <div class="form-group" [class.has-error]="pass.invalid" [class.has-success]="pass.valid">
+                    <label class="control-label" for="exampleInputName2">Password</label>
+                    <input type="password" [(ngModel)]="user1.pass" #pass="ngModel" class="form-control input-underline input-lg" id="pass" name="pass" ngModel required="" placeholder="Password">
+                    <span class="help-block" *ngIf="pass.errors?.required">Password is required</span>
+                </div>  
+
+                <div class="form-group" >
+                    <label class="control-label" for="exampleInputName2">Integration</label>
+                    <input type="text" class="form-control input-underline input-lg" ngModel id="integration" name="integration" placeholder="Integration">
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Build</button>
+            </div>
+            <br>
+
+        </form>
+
+        <!-- <button (click)='onClick()'>Build</button> -->
+        <br>
+        <!-- <a [attr.href]="downloadUrl">Click me</a> -->
+        <!--    <button (click)='onClicky()'>Clicky</button> -->
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" [style.width]="val + '%'" aria-valuemin="0" aria-valuemax="100">{{val}}%</div>
+        </div>
+        <br>
+        <br>
+        <div class="alert alert-success" [hidden]="!isSuccess">
+            <strong>SUCCESS!</strong> Build completed successfully. Your TDD will get downloaded automatically...
+        </div>
+        <div class="alert alert-info" [hidden]="!isSuccess">
+            Time taken for build: {{buildText}}
+        </div>
+        <div class="alert alert-danger" [hidden]="!isFail">
+            <strong>FAILURE.</strong> Build failed. Please check your input parameters.
+        </div>
+
+        <!-- <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div> -->
+    </div>
+</div>
+<!-- /.row -->
+<!-- </div> -->

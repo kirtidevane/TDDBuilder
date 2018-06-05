@@ -1,0 +1,77 @@
+$topnav-background-color: #222;
+:host {
+    .navbar {
+        background-color: $topnav-background-color;
+        .navbar-brand {
+            color: #fff;
+        }
+        .nav-item > a {
+            color: #999;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    
+    .messages {
+        width: 300px;
+        .media {
+            border-bottom: 1px solid #ddd;
+            padding: 5px 15px;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .media-body {
+            h5 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .small {
+                margin: 0;
+            }
+            .last {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+/*input.form-control {
+    background-image: url(assets/images/search_icon.png); 
+    background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;  
+    border: none;           
+    cursor: pointer;        
+    height: 50px;           
+    width: 50px;
+    padding-left: 16px;     
+    vertical-align: middle;     
+}*/
+.search-bar {
+    height: 29px;
+    background-color: #e1e1e1;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    position:relative;
+    width:230px
+    }
+    .search-bar .searchbutton {
+    position:absolute;
+    top:23%;
+    right:5px;
+    }
+    .sfield {
+    float: left;
+    margin: 5px 0 0 8px;
+    font: 8pt Verdana;
+    color: #888;
+    height: 20px;
+    line-height: 18px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    max-width: 125px
+    }

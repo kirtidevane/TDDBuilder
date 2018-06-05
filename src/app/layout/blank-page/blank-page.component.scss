@@ -1,0 +1,346 @@
+/*h1 {
+    color: black;
+}
+.row{
+    //background: url(assets/images/download.jpg);
+    background-size: cover;
+    position: relative;
+   
+}
+
+.row:before{
+    content: "";
+    width: 1000%;
+    height: 900%;
+    background: rgb(112, 166, 231);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.form-horizontal{
+    padding: 60px 40px 55px 40px;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 10px;
+    //text-align: 0 auto;
+    //width: 150%
+    
+    
+}
+.form-horizontal:before{
+    //content: "\f007";
+    font-family: fontawesome;
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #59aaf7;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+}
+.form-horizontal .heading{
+    display: block;
+    font-size: 28px;
+    color: #597886;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-horizontal .form-group{
+    margin: 0 0 30px 0px;
+    position: relative;
+}
+.form-horizontal .form-group:last-child{ margin: 0; }
+.form-horizontal .form-control{
+    height: 40px;
+    border: 2px solid rgb(130, 182, 245);
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 0 20px 0 26%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #94abb6;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    //vertical-align: 50px;
+}
+.form-horizontal .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-horizontal .control-label{
+    width: 25%;
+    height: 36px;
+    line-height: 36px;
+    background: #f5ffff;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    text-transform: capitalize;
+    text-align: center;
+    border-right: 2px solid rgb(130, 182, 245);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+}
+.form-horizontal .btn,
+.form-horizontal .btn:focus{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background: #1467aa;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.form-horizontal .btn:hover:disabled{ background: #c2bbba; }
+.form-horizontal .btn:hover{ background: #3ecc62; }
+.form-horizontal .btn:before{
+   // content: "\f084";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 24px;
+    color: #fff;
+}
+.form-horizontal .signup,
+.form-horizontal .forgot-pass{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    color: #3289db;
+}
+.form-horizontal .forgot-pass{
+    float: right;
+    color: #58aebc;
+}
+@media only screen and (max-width: 990px){
+    .form-horizontal:before{ top: -50px; }
+}
+@media only screen and (max-width: 480px){
+    .form-horizontal{ padding: 60px 20px 40px 20px; }
+    .form-horizontal .control-label{ font-size: 12px; }
+}
+
+.help-block{
+    color: #f80612;
+    font-family:Arial, Helvetica, sans-serif;
+}
+*/
+
+/*.position{
+    margin-left: 7%;
+    margin-right: 7%;
+    //background-color: rgba(73, 130, 118, 0.9);
+
+}*/
+/*.form-group .tooltiptext {
+    visibility: hidden;
+   // width: 120px;
+    //background-color: white;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 100% ;
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Position the tooltip 
+   position: absolute;
+    z-index: 1;
+}
+
+.form-group:hover .tooltiptext {
+    visibility: visible;
+}*/
+/*.row{
+    //background: url(assets/images/download.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.row:before{
+    content: "";
+    width: 1000%;
+    height: 900%;
+    background: rgb(112, 166, 231);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    
+}*/
+
+.row{
+    //background: url(assets/images/up.jpeg);
+    //background-image: url("assets/images/back1.jpg");
+        /* Full height */
+     //height: 100%; 
+
+        /* Center and scale the image nicely */
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //height: 100%;
+    //width: 100%;
+   // background-size: cover;
+    //position: relative;
+   
+}
+
+.help-block{
+    color: #060af8;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-bg{
+     background: #ddd; 
+     //background: url(assets/images/background.jpg);
+    }
+.form-horizontal{
+    background: rgb(171, 218, 219);
+    //background: #fff;
+    padding: 50px 50px;
+    border-radius: 6px;
+   
+    
+    //width: 100%;
+    //height: 400px;
+}
+
+.form-horizontal .form-group{
+    margin: 0 0 20px 0;
+    position: relative;
+    
+}
+.form-horizontal .form-group:last-child{ margin: 40px 0 0 0; }
+.form-horizontal .form-group i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #c4c4c4;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+.form-horizontal .form-control{
+    height: 40px;
+    background: #fff;
+    border: 2px solid #d9d9d9;
+    box-shadow: none;
+    padding: 0 20px 0 50px;
+    font-size: 16px;
+    color: #7f8291;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+}
+.form-horizontal .form-control[type=password]{ padding: 0 105px 0 50px; }
+.form-horizontal .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+    border-color: #4b92e3;
+}
+.form-horizontal .form-control::-webkit-input-placeholder,
+.form-horizontal .form-control::-moz-placeholder,
+.form-horizontal .form-control::placeholder{ color: #c4c4c4; }
+.form-horizontal .form-group label{
+    padding: 0 7px;
+    background: #4b92e3;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    //top: 9px;
+    left: 15px;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-group:hover label{
+    opacity: 1;
+    top: -9px;
+}
+.form-horizontal .signup a{ color: #4b92e3; }
+.form-horizontal .btn{
+    padding: 8px 30px;
+    background: #f30f0f;
+    float: right;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.form-horizontal .btn:focus{
+    background: #4b92e3;
+    color: #fff;
+}
+@media only screen and (max-width:  70.333333% ){
+    .form-horizontal{ padding: 40px 20px; }
+    .form-horizontal .form-group:last-child{
+        text-align: center;
+        margin-top: 0;
+    }
+    .form-horizontal .signup{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-horizontal .btn{ float: none; }
+}
+@media (min-width: 992px){
+
+.col-lg-10 {
+    flex: 0 0 83.33333333%;
+    max-width: 75.333333%;
+}
+}
+.form-horizontal .btn,
+.form-horizontal .btn:focus{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background:#4b92e3;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.form-horizontal .btn:hover:disabled{ background: #1100ff; }
+.form-horizontal .btn:hover{ background: #3ecc62; }
+.form-horizontal .btn:before{
+   // content: "\f084";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 24px;
+    color: #fff;
+}
