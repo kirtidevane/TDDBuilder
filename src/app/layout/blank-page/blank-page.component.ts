@@ -67,7 +67,7 @@ export class BlankPageComponent implements OnInit {
     }
 
     getJenkinsXML(no) {
-        this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/' + no + '/api/xml', { responseType: 'text' })
+        this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/' + no + '/api/xml', { responseType: 'text' })
             .subscribe(
                 res1 => {
                     console.log('Success ' + res1);
@@ -80,7 +80,7 @@ export class BlankPageComponent implements OnInit {
 
                     if (str1 === 'SUCCESS') {
                         //  alert(str1);
-                        this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/' + no + '/logText/progressiveText?start=0', { responseType: 'text' })
+                        this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/' + no + '/logText/progressiveText?start=0', { responseType: 'text' })
                             .subscribe(
                                 res => {
                                     console.log('Success ' + res);
@@ -125,7 +125,7 @@ export class BlankPageComponent implements OnInit {
     download(no, op) {
         //console.log(no, op);
 
-        const downloadUrl = 'http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/' + no + '/artifact/' + op;
+        const downloadUrl = 'http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/' + no + '/artifact/' + op;
 
         const filename = op.substring(7, );
 
@@ -166,7 +166,7 @@ export class BlankPageComponent implements OnInit {
     onClick(svnurl, user, pass, integration) {
         console.log('method triggered');
         // tslint:disable:max-line-length
-        this.http.post('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/buildWithParameters?token=remoteToken&svnurl=' + svnurl + '&username=' + user + '&password=' + pass + '&integration=' + integration, null, { headers: {} })
+        this.http.post('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/buildWithParameters?token=remoteToken&svnurl=' + svnurl + '&username=' + user + '&password=' + pass + '&integration=' + integration, null, { headers: {} })
             .subscribe(
                 res => {
                     console.log('Success post ' + res);
@@ -187,7 +187,7 @@ export class BlankPageComponent implements OnInit {
             if (i === 25) {
                 initSub.unsubscribe();
                // console.log('Reesh');
-                this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/lastBuild/buildNumber', { responseType: 'text' })
+                this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/lastBuild/buildNumber', { responseType: 'text' })
                     .subscribe(
                         res => {
                            // console.log('Success get' + res);
@@ -202,7 +202,7 @@ export class BlankPageComponent implements OnInit {
             }
         });
 
-        /*  this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/lastBuild/buildNumber', { responseType: 'text' })
+        /*  this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/lastBuild/buildNumber', { responseType: 'text' })
               .subscribe(
                   res => {
                       console.log('Success ' + res);
@@ -229,8 +229,8 @@ export class BlankPageComponent implements OnInit {
      
      
           // tslint:disable:max-line-length
-          // 'http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/buildWithParameters?token=remoteToken&svnurl=https://openge.ge.com/svn/soacoe/tags/Power/WellandMES/AprilRelease/DPERP-WELLANDMES-Integrations/&username=rishi.sridhar&password=rishi.sridhar'
-          this.http.post('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/buildWithParameters?token=remoteToken', httpOptions).subscribe(
+          // 'http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/buildWithParameters?token=remoteToken&svnurl=https://openge.ge.com/svn/soacoe/tags/Power/WellandMES/AprilRelease/DPERP-WELLANDMES-Integrations/&username=rishi.sridhar&password=rishi.sridhar'
+          this.http.post('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/buildWithParameters?token=remoteToken', httpOptions).subscribe(
               error => console.log(error)
           );*/
     }
@@ -271,7 +271,7 @@ export class BlankPageComponent implements OnInit {
        const sub: Subscription = timer.subscribe(tick => {
            i++;
            console.log(i);
-           // this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/lastBuild/logText/progressiveText?start=0', { responseType: 'text' })
+           // this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/lastBuild/logText/progressiveText?start=0', { responseType: 'text' })
  
            console.log('loggyyyy');
            if (i === 10) {
@@ -281,7 +281,7 @@ export class BlankPageComponent implements OnInit {
        });*/
 
     // tslint:disable:max-line-length
-    /*this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEDocumentationAutoGenerator/lastBuild/api/xml', { responseType: 'text' })
+    /*this.http.get('http://alpmdmappdvn01.corporate.ge.com:8008/job/GEProcessScanTool/lastBuild/api/xml', { responseType: 'text' })
         .subscribe(
             res => {
                 console.log('Success ' + res);
@@ -291,5 +291,5 @@ export class BlankPageComponent implements OnInit {
                 alert(JSON.stringify(err));
             }
         );*/
-}
+
 
